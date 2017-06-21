@@ -39,6 +39,7 @@ public class Main extends Application{
 	
 	public static void initRootLayout(Stage stage) {
 		primaryStage = stage;
+		primaryStage.getIcons().add(new Image("file:imagens/icon.png"));
 		primaryStage.setTitle("Bar Report");
 		try{
 			FXMLLoader loader = new FXMLLoader();
