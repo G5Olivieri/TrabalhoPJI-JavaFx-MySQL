@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../root.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bar.view.login.LoginController">
+   <children>
+      <TextField fx:id="email" layoutX="252.0" layoutY="145.0" promptText="email" />
+      <PasswordField fx:id="senha" layoutX="252.0" layoutY="181.0" promptText="senha" />
+      <HBox layoutX="235.0" layoutY="238.0" spacing="10.0">
+         <children>
+            <Button fx:id="registrar" mnemonicParsing="false" onAction="#btnRegistrar" text="Registrar" />
+            <Button fx:id="cancel" mnemonicParsing="false" onAction="#btnCancelar" text="Cancel" />
+            <Button fx:id="entrar" mnemonicParsing="false" onAction="#btnEntrar" text="Entrar" />
+         </children>
+      </HBox>
+      <Label layoutX="282.0" layoutY="85.0" text="Login">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.6619047619047619" startX="1.0">
+               <stops>
+                  <Stop color="#ff00dd" />
+                  <Stop color="#f894f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="result" layoutX="252.0" layoutY="215.0" textFill="#ff0404" />
+   </children>
+</AnchorPane>
