@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" stylesheets="@../../root.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bar.view.login.cadastro.CadBarController">
+   <children>
+      <Text id="title" layoutX="169.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Bar" />
+      <TextField fx:id="nome" layoutX="226.0" layoutY="109.0" promptText="Nome" />
+      <TextField fx:id="nome_pro" layoutX="226.0" layoutY="149.0" promptText="Nome proprietário" />
+      <TextField fx:id="endereco" layoutX="226.0" layoutY="193.0" promptText="Endereço" />
+      <TextField fx:id="telefone" layoutX="226.0" layoutY="233.0" promptText="Telefone" />
+      <Button fx:id="cadastrar" layoutX="308.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnActionCadastrar" text="Cadastrar" />
+      <Button fx:id="cancelar" layoutX="238.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnActionCancelar" text="Cancelar" />
+      <Label fx:id="lbl" layoutX="224.0" layoutY="271.0" textFill="RED" />
+   </children>
+</AnchorPane>
